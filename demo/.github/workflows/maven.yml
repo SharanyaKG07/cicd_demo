@@ -25,5 +25,5 @@ jobs:
         cache: 'maven'
 
     - name: Build using Maven
-      # We use ./pom.xml to tell Maven it is definitely in the current root folder
-      run: mvn -B clean install --file pom.xml
+      # This command tells Maven to find the pom.xml even if it's in a subfolder
+      run: mvn clean install -f demo/pom.xml
