@@ -30,4 +30,4 @@ jobs:
     - name: Build using Maven
       run: mvn clean install
       # CHANGE THIS to your actual folder name if it's different
-      working-directory: DEMO
+      working-directory: cicd_maven/demo
